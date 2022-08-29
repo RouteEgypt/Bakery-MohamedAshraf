@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+body {
+  font-family: 'Alegreya';
+  position: relative;
+}
+.shared-bg {
+  background-color: #f8f8f8;
+}
+.navbar {
+  width: 100%;
+  background-color: #35333044;
+  position: fixed;
+}
+.navbar .logo {
+  float: left;
+  width: 15%;
+}
+
+.navbar .logo img {
+  width: 100%;
+  padding-top: 10px;
+}
+.navbar .links {
+  float: right;
+  width: 50%;
+}
+.navbar .links .main-links > li {
+  float: left;
+}
+.navbar .links .main-links > li > a {
+  padding: 20px 20px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+.drop-down {
+  position: relative;
+}
+.drop-down-menu {
+  background-color: #8e7754;
+  position: absolute;
+  display: none;
+}
+.drop-down:hover .drop-down-menu {
+  display: block;
+}
+.drop-down-menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 15px;
+  display: block;
+}
+.drop-down-menu li a:hover {
+  background-color: #353330;
+}
+.activeted {
+  border-top: 3px solid #8e7754;
+}
+
+.hero {
+  overflow: auto;
+  height: 100vh;
+  background-image: url(images/drew-coffman-1872.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero-content {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  margin-top: 200px;
+  color: white;
+}
+.hero-content h1 {
+  font-size: 70px;
+  font-weight: 400;
+}
+.hero-content p {
+  padding: 20px 0;
+  font-size: 25px;
+}
+.btn {
+  border: none;
+  padding: 20px 30px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 900;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn-bg {
+  background-color: #8e7754;
+
+  border: 2px solid #8e7754;
+}
+.btn-bg:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+}
+.btn-empty {
+  background-color: transparent;
+  border: 2px solid white;
+}
+.btn-empty:hover {
+  background-color: white;
+  color: black;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.who-we-are {
+  margin: 70px 0;
+}
+.who-we-are .image {
+  width: 40%;
+  display: inline-block;
+}
+
+.who-we-are .image img {
+  width: 70%;
+}
+.who-we-are .text {
+  width: 50%;
+  display: inline-block;
+}
+.who-we-are .text h2 {
+  padding-top: 10px;
+}
+.who-we-are .text p {
+  padding: 20px 0;
+}
+.who-we-are .text ul li {
+  padding: 10px 30px;
+  /* position: relative; */
+}
+/* .who-we-are .text ul li::after {
+  content: '';
+  position: absolute;
+  cont
+} */
+.location {
+  padding: 50px 0;
+}
+.location .text {
+  display: inline-block;
+  width: 50%;
+  margin-top: 10px;
+}
+.location .text h2 {
+  font-size: 30px;
+}
+.location .text p {
+  padding-top: 20px;
+}
+
+.location .image {
+  display: inline-block;
+  width: 40%;
+}
+
+.location .image img {
+  width: 70%;
+  padding-left: 100px;
+}
+
+.bakings {
+  width: 100%;
+  /* margin: auto; */
+  padding: 50px 0;
+}
+.bakings .heading {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.bakings .item {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+.bakings .item img {
+  width: 90%;
+}
+.bakings .item p {
+  width: 80%;
+  margin: auto;
+}
+
+.clear-fix {
+  clear: both;
+}
+.contact {
+  padding: 50px 0;
+}
+.contact .info {
+  width: 50%;
+  float: left;
+}
+.contact .map {
+  width: 50%;
+  float: right;
+}
+.contact .map iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+}
+
+.contact .info h3 {
+  font-size: 35px;
+  font-weight: 300;
+}
+.contact .info p {
+  padding: 20px 0;
+  width: 90%;
+  color: gray;
+}
+
+.contact .info h5 {
+  padding: 10px 0;
+  color: gray;
+  font-weight: 300;
+  font-size: 16px;
+}
+.contact .info ul li {
+  padding: 10px 20px;
+  color: gray;
+}
+.our-data {
+  background-color: #403d38;
+  padding: 50px 0;
+}
+.our-data .data-item {
+  width: 25%;
+  float: left;
+}
+.our-data h4 {
+  color: white;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+.our-data .about-us p {
+  width: 80%;
+  padding-bottom: 20px;
+  color: gray;
+}
+
+.our-data .special-text ul li,
+.our-data .company-contact ul li {
+  color: gray;
+  padding: 0 0 20px 15px;
+  position: relative;
+}
+.our-data .special-text ul li::before {
+  position: absolute;
+  content: '>';
+  left: 0;
+  /* width: 10px;
+  height: 10px; */
+  /* background-color: aqua; */
+  color: gray;
+}
+.our-data .special-text ul li::after {
+  position: absolute;
+  content: '';
+  width: 250px;
+  height: 1px;
+  background-color: gray;
+  bottom: 10px;
+  left: 0;
+}
+.our-data .company-contact {
+  position: relative;
+}
+.our-data .company-contact::before {
+  content: '';
+  position: absolute;
+  background-image: url(images/contact-details-map.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.3;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+.our-data .company-contact ul li a {
+  color: gray;
+  text-decoration: none;
+}
+
+.our-data .company-contact ul li a:hover {
+  color: white;
+}
+.footer {
+  background-color: #353330;
+  text-align: center;
+  padding: 50px;
+}
+footer img {
+  width: 90px;
+}
+.footer p {
+  color: gray;
+  padding: 20px;
+  font-size: 14px;
+}
+.footer a i {
+  display: inline-block;
+  color: #403d38;
+  font-size: 30px;
+}
+.footer a i:hover {
+  color: white;
+}
+.footer a {
+  padding: 0 10px;
+}
